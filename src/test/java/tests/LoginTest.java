@@ -9,7 +9,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pages.Login;
-import config.properties;
+import config.Utilities;
 import java.time.Duration;
 
 public class LoginTest {
@@ -32,7 +32,7 @@ public class LoginTest {
         //1. Click login button
         login.loginBtn.click();
         //2. Enter Email
-        login.enterCredentials(properties.username,properties.password);
+        login.enterCredentials(Utilities.username, Utilities.password);
         //4. Click login button
         login.sumitBtn.click();
         //driver.findElement(By.cssSelector("button[type='submit']")).click();
