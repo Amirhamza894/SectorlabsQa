@@ -1,13 +1,18 @@
 package tests;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import java.time.Duration;
+import java.util.List;
+import java.util.Random;
+
 import pages.Categories;
 import config.Utilities;
 
@@ -35,6 +40,20 @@ public class CategoriesTest {
         String expectedSearchText = "Cars for Sale";
         assert actualSearchText.equals(expectedSearchText);
 
+    }
+
+    @Test
+    public void verifyCatrgorySearchAndCategoryOnSearchPage() {
+        driver.get(Utilities.URL);
+        List<WebElement> allCategories = driver.findElements(By.cssSelector("div[class$='_1adcd900']"));
+        Random random = new Random();
+        WebElement selectedCategory = allCategories.get((random.nextInt(allCategories.size())));
+        String searchCategoryText = selectedCategory.getText();
+        selectedCategory.click();
+        searchCategoryText = searchCategoryText.replace("All in", "");
+        searchCategoryText = searchCategoryText.replaceFirst(" ", "");
+        String actualCategorySearch = driver.findElement(By.xpath("//span[@class='_7597a67d dd224544'][contains(text(),\"" + searchCategoryText + "\")]")).getText();
+        assert searchCategoryText.equals(actualCategorySearch);
     }
 
 //    @Test

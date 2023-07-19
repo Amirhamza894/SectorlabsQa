@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06bd1548-04f5-4739-ba95-14a9910ca067" name="Changes" comment="" />
+    <list default="true" id="06bd1548-04f5-4739-ba95-14a9910ca067" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/CategoriesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/CategoriesTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +46,7 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/amir.hamza/IdeaProjects/automation_tutorial&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.CategoriesTest.verifyHeroCategoryAndItsDirection">
+  <component name="RunManager" selected="TestNG.CategoriesTest.verifyCatrgorySearchAndCategoryOnSearchPage">
     <configuration name="CategoriesTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="automation_tutorial" />
       <extension name="coverage">
@@ -55,6 +58,24 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.CategoriesTest" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CategoriesTest.verifyCatrgorySearchAndCategoryOnSearchPage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automation_tutorial" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.CategoriesTest" />
+      <option name="METHOD_NAME" value="verifyCatrgorySearchAndCategoryOnSearchPage" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -96,18 +117,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.loginWithInValidCredentials" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="automation_tutorial" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
-      <option name="METHOD_NAME" value="loginWithInValidCredentials" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LoginTest.loginWithValidCredentials" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="automation_tutorial" />
       <option name="PACKAGE_NAME" value="" />
@@ -122,11 +131,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CategoriesTest.verifyCatrgorySearchAndCategoryOnSearchPage" />
         <item itemvalue="TestNG.CategoriesTest.verifyHeroCategoryAndItsDirection" />
         <item itemvalue="TestNG.CategoriesTest" />
         <item itemvalue="TestNG.LoginTest" />
         <item itemvalue="TestNG.LoginTest.loginWithValidCredentials" />
-        <item itemvalue="TestNG.LoginTest.loginWithInValidCredentials" />
       </list>
     </recent_temporary>
   </component>
