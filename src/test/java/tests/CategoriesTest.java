@@ -56,21 +56,6 @@ public class CategoriesTest {
         assert searchCategoryText.equals(actualCategorySearch);
     }
 
-//    @Test
-//    public void verifyHeroCategoryAndItsDirection() {
-//        driver.get("https://www.dubizzle.com.eg/en/");
-//        Actions action = new Actions(driver);
-//        WebElement categoryCarForSale = driver.findElement(By.xpath("//a[.='Vehicles']"));
-//        action.moveToElement(categoryCarForSale).build().perform();
-////        WebElement carForSaleSubCategory = driver.findElement(By.xpath("//div[@class='_8f799b34 b5f96152'][.='Cars for Sale']"));
-////        action.moveToElement(carForSaleSubCategory).click().build().perform();
-////        WebElement actualSearchText = driver.findElement(By.cssSelector("h1[class$='_888f7099']"));
-//////                ctg.searchText;
-////        String actualText = actualSearchText.getText();
-////        String expectedSearchText = "Cars for Sale";
-////        assert expectedSearchText.equals(actualText);
-//    }
-
     @AfterTest
     public void distroyBrowser() { driver.quit(); }
 }
