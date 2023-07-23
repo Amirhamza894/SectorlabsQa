@@ -13,6 +13,7 @@ target/
 *.iws
 *.iml
 *.ipr
+application-20230723.log
 
 ### Eclipse ###
 .apt_generated
