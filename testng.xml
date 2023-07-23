@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/amir.hamza/IdeaProjects/automation_tutorial">
+        <classes>
+            <class name="practice.Shahab">
+                <methods>
+                    <include name="seleniumAction"/>
+                </methods>
+            </class>
+            <class name="tests.CategoriesTest">
+                <methods>
+                    <include name="HeroCategoryAndItsDirection"/>
+                </methods>
+            </class>
+            <class name="tests.LoginTest">
+                <methods>
+                    <include name="loginWithValidCredentials"/>
+                    <include name="loginWithInValidCredentials"/>
+                    <include name="test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
