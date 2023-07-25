@@ -14,6 +14,7 @@ target/
 *.iml
 *.ipr
 application-20230723.log
+test-output
 
 ### Eclipse ###
 .apt_generated
