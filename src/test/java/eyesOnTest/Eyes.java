@@ -12,13 +12,12 @@ public class Eyes implements ITestListener {
 
     @Override
     public void onTestStart(ITestResult result) {
-        logger.info("\u23F3 Test STARTED: --- " + result.getMethod().getDescription() + " ---");
+        logger.info("\u2192 TEST: " + result.getMethod().getDescription());
     }
 
     @Override
     public void onTestSuccess(ITestResult result) {
-        logger.info("\u2705 Test PASSED: " + result.getName());
-        System.out.println("********** STATUS 🟢 **********");
+        logger.info("\u2705 PASSED: " + result.getName());
     }
 
     @Override
