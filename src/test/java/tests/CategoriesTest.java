@@ -12,7 +12,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.*;
 import pages.Categories;
-
 import static pages.Categories.actualCategorySearch;
 //import static presentation.CasePresentation.step;
 import presentation.CasePresentation;
@@ -41,6 +40,7 @@ public class CategoriesTest {
 
     }
 
+    
     @Test(description = "Verify Hero Category and it's redirection")
     public void HeroCategoryAndItsDirection() {
         ExtentTest extentTest = extentReports.createTest("HeroCategoryAndItsDirection");
